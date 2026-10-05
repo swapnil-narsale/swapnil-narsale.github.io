@@ -13,3 +13,15 @@ themeButton.addEventListener('click', () => {
 });
 updateThemeButton();
 document.querySelector('#year').textContent = new Date().getFullYear();
+
+// Keep section headings clear of the navigation at every screen size.
+const siteHeader = document.querySelector('.site-header');
+function updateHeaderHeight() {
+  document.documentElement.style.setProperty('--header-height', Math.ceil(siteHeader.getBoundingClientRect().height + 16) + 'px');
+}
+updateHeaderHeight();
+if ('ResizeObserver' in window) {
+  new ResizeObserver(updateHeaderHeight).observe(siteHeader);
+} else {
+  window.addEventListener('resize', updateHeaderHeight);
+}
