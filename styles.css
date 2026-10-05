@@ -2,3 +2,18 @@
 
 /* Recommendations */
 .recommendations-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.5rem}.recommendations-subheading{margin:2.5rem 0 1.25rem;font-size:1.3rem}.recommendation-card{border:1px solid var(--line);padding:1.75rem;border-radius:8px}.recommendation-card h3{margin:.5rem 0;font-size:1.25rem}.recommendation-date{font-size:.85rem;opacity:.7}.recommendation-card p{line-height:1.7}.recommendation-card .text-link{display:inline-block;margin-top:.5rem}@media(max-width:760px){.recommendations-grid{grid-template-columns:1fr}.site-header nav{gap:.8rem;flex-wrap:wrap}}
+
+/* Keep navigation visible while scrolling. */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--paper);
+  box-shadow: 0 3px 12px rgba(0, 0, 0, .06);
+}
+html { scroll-padding-top: var(--header-height, 160px); }
+.skip-link { z-index: 101; }
+@media print {
+  .site-header { position: static; box-shadow: none; }
+  html { scroll-padding-top: 0; }
+}
