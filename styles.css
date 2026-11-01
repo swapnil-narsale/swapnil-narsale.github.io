@@ -17,3 +17,5 @@ html { scroll-padding-top: var(--header-height, 160px); }
   .site-header { position: static; box-shadow: none; }
   html { scroll-padding-top: 0; }
 }
+
+@media(min-width:761px){.work-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.work-grid .text-link{display:inline-block;margin-top:14px}}

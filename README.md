@@ -27,7 +27,8 @@ The expected address is not live until the GitHub Pages deployment succeeds.
 
 ## Content decisions
 
-- Central Arizona College is shown as **August 2021–Present**, as Swapnil confirmed for this portfolio.
+- Current role: **Interbiz Consulting**, Data Engineer, October 2026–Present. Central Arizona College is shown as **August 2021–September 2026**, matching LinkedIn.
+- The latest GitHub repository, `lead-generation-agent-showcase`, is featured under Selected Professional Work.
 - Education names and other employment dates follow the supplied Apple resume.
 - Public dashboards are described as portfolio and practice work; they are not represented as employer projects or as evidence of clinical results.
 - Employer work is summarized without exposing employer data or private dashboards.
